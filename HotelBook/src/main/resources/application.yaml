@@ -1,0 +1,17 @@
+
+# dataBase configuration
+spring:
+  application:
+    name: hotel-api
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/hotelBack
+    username: postgres
+    password: chams16
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
